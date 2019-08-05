@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.java.mp3player.controller.ControlPaneController">
+
+        <children>
+            <Button fx:id="previousButton" maxHeight="35.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Button" />
+            <ToggleButton fx:id="playButton" maxHeight="35.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" text="ToggleButton" />
+            <Button fx:id="nextButton" maxHeight="35.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Button" />
+            <Slider fx:id="volumeSlider" maxHeight="35.0" maxWidth="150.0" prefWidth="180.0" />
+            <Slider fx:id="progressSlider" maxHeight="35.0" maxWidth="150.0" prefWidth="180.0" />
+        </children>
+    </HBox>
