@@ -7,7 +7,6 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
 
 public class ControlPaneController {
-
     @FXML
     private Button previousButton;
 
@@ -23,33 +22,23 @@ public class ControlPaneController {
     @FXML
     private Slider progressSlider;
 
-
-    public void initialize(){
-        configureButtons();
-        configureSliders();
-
+    public Button getPreviousButton() {
+        return previousButton;
     }
 
-
-    private void configureSliders(){
-
-        volumeSlider.valueProperty().addListener((observableValue, number, newValue) ->
-                System.out.println("Zmiana głośności" + newValue.doubleValue()));
-
-        progressSlider.valueProperty().addListener(observable -> System.out.println("Przesunięcie piosenki."));
+    public ToggleButton getPlayButton() {
+        return playButton;
     }
 
+    public Button getNextButton() {
+        return nextButton;
+    }
 
+    public Slider getVolumeSlider() {
+        return volumeSlider;
+    }
 
-    private void configureButtons(){
-        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka."));
-        nextButton.setOnAction(event -> System.out.println("Następna piosenka."));
-        playButton.setOnAction(event -> {
-            if(playButton.isSelected()){
-                System.out.println("PLAY");
-            }else{
-                System.out.println("STOP");
-            }
-        });
+    public Slider getProgressSlider() {
+        return progressSlider;
     }
 }
